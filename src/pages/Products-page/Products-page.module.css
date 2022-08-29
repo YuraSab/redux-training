@@ -1,0 +1,11 @@
+.mainDiv{
+    min-height: 870px;
+    /*background: lightgray;*/
+    /*background: #E2E0DF;*/
+
+    /*background: linear-gradient(to right, #E2E0DF, #E2E2E0, #E7E5E3, #E8E6E7 , #E8E8E8, #EAEAEA, #EBEBEB );*/
+    /*background: linear-gradient(to right, #E2E2E0, #ECECEC );*/
+    /*background: linear-gradient(to right, #E4DFDF, #ECECEC );*/
+    background: linear-gradient(to right, #E1E0DC, #ECECEC );
+    /*border-top: black 1px solid;*/
+}

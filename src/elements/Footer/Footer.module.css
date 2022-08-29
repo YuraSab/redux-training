@@ -1,0 +1,13 @@
+.mainDiv{
+    height: 100%;
+    /*background: #802C6E;*/
+    background: black;
+
+
+    padding-left: 75px;
+    padding-right: 75px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
