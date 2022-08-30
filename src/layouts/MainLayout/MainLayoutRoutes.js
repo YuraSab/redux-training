@@ -3,7 +3,7 @@ import {Outlet} from "react-router-dom";
 import {Header} from "../../elements/Header";
 // import Image from "../../photos/istockphoto-545812816-612x612.jpg";
 // import Image from "../../photos/istockphoto-545812816-612x6122222222.jpg";
-import Image from "../../photos/start-a-clothing-line-retail.webp";
+// import Image from "../../photos/start-a-clothing-line-retail.webp";
 
 
 const MainLayoutRoutes = () => {
@@ -16,8 +16,8 @@ const MainLayoutRoutes = () => {
                 // style={{backgroundImage: `url(../../photos/istockphoto-545812816-612x612.jpg)`}}
                 // style={{backgroundImage: `url(${background})`, height: '100%'}}
                 style={{
-                    // background: 'linear-gradient(to right, #E1E0DC, #ECECEC)',
-                    backgroundImage: 'url(' + Image + ')',
+                    background: 'linear-gradient(to right, #E1E0DC, #ECECEC)',
+                    // backgroundImage: 'url(' + Image + ')',
                     backgroundPosition: 'center',
                     backgroundSize: '100%',
                     minHeight: '100vh',
