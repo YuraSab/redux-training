@@ -5,6 +5,8 @@ import {MainPage} from "../../pages/Main-page";
 import {ProductPage} from "../../pages/Products-page";
 import {OneProductPage} from "../../pages/OneProduct-page";
 import {InfoPage} from "../../pages/Info-page";
+import {MalePage} from "../../pages/GenderPages/Male-page";
+import {FemalePage} from "../../pages/GenderPages/Female-page";
 
 
 const MainLayout = () => {
@@ -20,6 +22,11 @@ const MainLayout = () => {
                     <Route path={'/products'} element={ <ProductPage/> }/>
                     {/* products (list of products)*/}
                     <Route path={'/products/:id'} element={ <OneProductPage/> }/>
+                    <Route path={'/products/male'} element={ <MalePage/> }/>
+                    <Route path={'/products/female'} element={ <FemalePage/> }/>
+                    <Route path={'/products/male/:id'} element={ <OneProductPage/> }/>
+                    <Route path={'/products/female/:id'} element={ <OneProductPage/> }/>
+
 
                     {/* info (info-page)*/}
                     <Route path={'/info'} element={<InfoPage/>}/>

@@ -1,4 +1,4 @@
-.mainDiv{
+.mainDiv {
     min-height: 870px;
     /*background: lightgray;*/
     /*background: #E2E0DF;*/
@@ -6,6 +6,48 @@
     /*background: linear-gradient(to right, #E2E0DF, #E2E2E0, #E7E5E3, #E8E6E7 , #E8E8E8, #EAEAEA, #EBEBEB );*/
     /*background: linear-gradient(to right, #E2E2E0, #ECECEC );*/
     /*background: linear-gradient(to right, #E4DFDF, #ECECEC );*/
-    background: linear-gradient(to right, #E1E0DC, #ECECEC );
+    background: linear-gradient(to right, #E1E0DC, #ECECEC);
     /*border-top: black 1px solid;*/
+
+
+    /*padding-left: 75px;*/
+    /*padding-right: 75px;*/
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 250px 0 250px;
+
 }
+
+
+.gender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gender:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 7px 5px 5px black;
+
+}
+
+
+.genderText {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+}
+
+
+.linker {
+    text-decoration: none;
+}
+
+
