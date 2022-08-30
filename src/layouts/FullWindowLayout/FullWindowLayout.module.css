@@ -20,9 +20,10 @@ main{
     /*min-height: 750px;*/
     /*min-height: 850px;*/
 
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 }
 
-/*footer{*/
-/*    grid-area: footer;*/
-/*}*/
+footer{
+    /*grid-area: footer;*/
+    height: 120px;
+}
