@@ -4,6 +4,7 @@ import {Header} from "../../elements/Header";
 // import Image from "../../photos/istockphoto-545812816-612x612.jpg";
 // import Image from "../../photos/istockphoto-545812816-612x6122222222.jpg";
 import Image from "../../photos/start-a-clothing-line-retail.webp";
+import {Footer} from "../../elements/Footer";
 
 
 const MainLayoutRoutes = () => {
@@ -18,7 +19,7 @@ const MainLayoutRoutes = () => {
                     backgroundImage: 'url(' + Image + ')',
                     backgroundPosition: 'center',
                     backgroundSize: '100%',
-                    height: '100vh',
+                    // height: '100vh',
                     backgroundRepeat: 'no-repeat'
                 }}
             >
@@ -34,6 +35,9 @@ const MainLayoutRoutes = () => {
             {/*<div style={{height: 200, background: "black"}}>*/}
             {/*    <Footer/>*/}
             {/*</div>*/}
+            <div>
+                <Footer/>
+            </div>
         </div>
     )
 }

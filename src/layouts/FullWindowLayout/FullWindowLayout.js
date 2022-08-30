@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from "./FullWindowLayout.module.css";
 // import {Header} from "../../elements/Header";
-import {Footer} from "../../elements/Footer";
 import {MainLayout} from "../MainLayout";
 
 
@@ -15,9 +14,9 @@ const FullWindowLayout = () => {
             <main>
                 <MainLayout/>
             </main>
-            <footer>
-                <Footer/>
-            </footer>
+            {/*<footer>*/}
+            {/*    <Footer/>*/}
+            {/*</footer>*/}
         </div>
     )
 }

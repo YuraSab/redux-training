@@ -1,13 +1,13 @@
 .mainGrid{
-    display: grid;
-    grid-template-rows:
-    /*        !*100px *!*/
-    1fr
-    120px;
-    grid-template-areas:
-    /*"header"*/
-    "main"
-    "footer";
+    /*display: grid;*/
+    /*grid-template-rows:*/
+    /*!*        !*100px *!*!*/
+    /*1fr*/
+    /*120px;*/
+    /*grid-template-areas:*/
+    /*!*"header"*!*/
+    /*"main"*/
+    /*"footer";*/
 
 }
 
@@ -16,11 +16,13 @@
 /*}*/
 
 main{
-    grid-area: main;
+    /*grid-area: main;*/
     /*min-height: 750px;*/
     /*min-height: 850px;*/
+
+    min-height: 100vh;
 }
 
-footer{
-    grid-area: footer;
-}
+/*footer{*/
+/*    grid-area: footer;*/
+/*}*/
