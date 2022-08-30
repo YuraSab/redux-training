@@ -23,8 +23,8 @@ const Products = ({genre}) => {
 
 
     return (
-        <div className={styles.mainDiv}>
-            <div>
+        <div className={styles.mainDivka}>
+            <div className={styles.list}>
                 {
                     products.map(el => {
                         return (

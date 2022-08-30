@@ -12,15 +12,18 @@ const MainLayoutRoutes = () => {
     return (
         <div>
             <div
+
                 // style={{backgroundImage: `url(../../photos/istockphoto-545812816-612x612.jpg)`}}
                 // style={{backgroundImage: `url(${background})`, height: '100%'}}
                 style={{
+                    // background: 'linear-gradient(to right, #E1E0DC, #ECECEC)',
                     backgroundImage: 'url(' + Image + ')',
                     backgroundPosition: 'center',
                     backgroundSize: '100%',
                     minHeight: '100vh',
-                    // maxHeight: '100vh',
+                    // maxHeight: ,
                     backgroundRepeat: 'no-repeat'
+
                 }}
             >
                 <header>

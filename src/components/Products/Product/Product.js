@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from "./Product.module.css";
+
 
 const Product = ({item}) => {
 
@@ -8,14 +10,16 @@ const Product = ({item}) => {
     // image
     // "rating":{"rate":3.9,"count":120}}
 
-    
+
   return (
-    <div>
-        <img src={item.image} alt={item.title}/>
+    <div className={styles.itemDiv} >
+         <img className={styles.itemImg} src={item.image} alt={item.title}/>
         <div>
-            {item.title}
-        </div>
+           {item.title}
+       </div>
     </div>
+
+
   )
 }
 
