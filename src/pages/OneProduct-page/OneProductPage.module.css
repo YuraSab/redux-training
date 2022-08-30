@@ -1,0 +1,47 @@
+.mainDiv{
+    padding: 50px 140px 50px 140px;
+
+
+
+    display: grid;
+    grid-template-columns: 420px 380px 1fr;
+    grid-template-rows: 75px 500px 1fr;
+
+    grid-template-areas:
+    "title info info"
+    "image info info"
+    "descriotion descriotion descriotion";
+}
+
+
+.title{
+    grid-area: title;
+    padding-top: 10px;
+
+    color: black;
+    font-size: 24px;
+    font-style: unset;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.itemImg{
+    grid-area: image;
+    max-width: 400px;
+    max-height: 450px;
+}
+
+.info{
+    grid-area: info;
+}
+
+
+.description{
+    grid-area: descriotion;
+    padding-top: 10px;
+
+    color: black;
+    font-size: 20px;
+    font-style: unset;
+    line-height: 22px;
+}

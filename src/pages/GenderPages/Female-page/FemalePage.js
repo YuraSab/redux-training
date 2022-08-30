@@ -5,7 +5,6 @@ const FemalePage = () => {
 
   return (
     <div>
-        {/*Female*/}
         <Products genre={'women\'s clothing'}/>
     </div>
   )

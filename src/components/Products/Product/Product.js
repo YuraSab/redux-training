@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "./Product.module.css";
+import {Link, useLocation} from "react-router-dom";
 
 
 const Product = ({item}) => {
@@ -11,16 +12,22 @@ const Product = ({item}) => {
     // "rating":{"rate":3.9,"count":120}}
 
 
-  return (
-    <div className={styles.itemDiv} >
-         <img className={styles.itemImg} src={item.image} alt={item.title}/>
-        <div>
-           {item.title}
-       </div>
-    </div>
+    const {pathname} = useLocation();
+
+    return (
+        <Link  to={`${pathname}/${item.id}`} style={{textDecoration: 'none'}}>
+            <div className={styles.itemDiv}>
+                <div>
+                    <img className={styles.itemImg} src={item.image} alt={item.title}/>
+                </div>
+                <div className={styles.title}>
+                    {item.title}
+                </div>
+            </div>
+        </Link>
 
 
-  )
+    )
 }
 
-export { Product }
+export {Product}
