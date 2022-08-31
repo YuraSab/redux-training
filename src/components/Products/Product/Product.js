@@ -23,6 +23,12 @@ const Product = ({item}) => {
                 <div className={styles.title}>
                     {item.title}
                 </div>
+                {/*<div className={styles.price}>*/}
+                {/*    Rating: {item.rating.rate} (voted: {item.rating.count})*/}
+                {/*</div>*/}
+                <div className={styles.price}>
+                    <b>{item.price} $</b>
+                </div>
             </div>
         </Link>
 

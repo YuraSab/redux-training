@@ -1,5 +1,5 @@
 .mainDiv{
-    height: 120px;
+    height: 250px;
     /*background: #802C6E;*/
     background: black;
 
@@ -8,6 +8,24 @@
     padding-right: 75px;
 
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
+}
+
+
+
+.logo{
+    width: 240px;
+    padding: 0 0 10px 0;
+}
+
+
+.mediaIcon{
+    width: 55px;
+    padding-right: 5px;
+}
+
+
+.contacts{
+    color: #ECECEC;
 }

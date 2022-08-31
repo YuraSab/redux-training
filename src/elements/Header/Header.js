@@ -1,13 +1,16 @@
 import React from 'react';
 import styles from "./Header.module.css";
 import {Link} from "react-router-dom";
+import Logo from "../../photos/Habibi.jpg";
+
 
 const Header = () => {
 
     return (
         <div className={styles.mainDiv}>
 
-            <Link className={styles.link}  to={'/'}>
+
+            <Link className={styles.link} to={'/'}>
                 <div className={styles.divLink}>
                     Home
                 </div>
@@ -24,6 +27,11 @@ const Header = () => {
                     Info
                 </div>
             </Link>
+
+
+            <div style={{justifyContent: "end"}}>
+                <img src={Logo} style={{width: 250, paddingLeft: 700}} alt={'Logo'}/>
+            </div>
 
 
         </div>
