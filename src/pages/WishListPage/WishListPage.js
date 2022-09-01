@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../../components/Products/Products/Products.module.css";
-import {Product} from "../../components/Products/Product";
 import {useSelector} from "react-redux";
+import {WishListElement} from "./WishListElement";
 
 const WishListPage = () => {
 
@@ -9,7 +9,10 @@ const WishListPage = () => {
 
 
     return (
+
+
         <div style={{paddingTop: 50}}>
+
             <div style={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -22,21 +25,35 @@ const WishListPage = () => {
                 You liked
             </div>
 
-            <div className={styles.mainDivka}>
-                <div className={styles.list}>
-                    {
-                        wishList
-                            .map(el => {
-                                return (
-                                    <Product
-                                        key={el.id}
-                                        item={el}
-                                    />
-                                )
-                            })
-                    }
-                </div>
-            </div>
+            {
+                wishList.length > 0 ? (
+
+                    <div>
+
+
+                        <div className={styles.mainDivka}>
+                            <div className={styles.list}>
+                                {
+                                    wishList
+                                        .map(el => {
+                                            return (
+                                                <WishListElement
+                                                    key={el.id}
+                                                    item={el}
+                                                />
+                                            )
+                                        })
+                                }
+                            </div>
+                        </div>
+                    </div>
+                ) : (
+                    <div className={styles.nonSelected}>
+                        <div style={{paddingTop: 75}}><h1>No items selected</h1></div>
+                    </div>
+                )
+            }
+
         </div>
     )
 }

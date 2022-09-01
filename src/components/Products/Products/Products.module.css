@@ -65,3 +65,16 @@
     border-radius: 4px;
 
 }
+
+
+
+.nonSelected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+    font-size: 40px;
+    font-weight: bold;
+
+}
