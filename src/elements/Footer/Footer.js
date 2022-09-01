@@ -14,9 +14,9 @@ const Footer = () => {
 
 
             <div className={styles.contacts}>
-                <h1>Час роботи</h1>
-                <h3>пн-пт: 9:00 - 19:00</h3>
-                <h3>сб-нд: 10:00 - 17:00</h3>
+                <h1>Work time</h1>
+                <h3>mn-fr: 9:00 - 19:00</h3>
+                <h3>st-sn: 10:00 - 17:00</h3>
             </div>
 
             <div>

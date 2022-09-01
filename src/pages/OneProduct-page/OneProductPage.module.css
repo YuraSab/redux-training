@@ -1,6 +1,5 @@
-.mainDiv{
+.mainDiv {
     padding: 50px 140px 50px 140px;
-
 
 
     display: grid;
@@ -8,40 +7,70 @@
     grid-template-rows: 75px 500px 1fr;
 
     grid-template-areas:
-    "title info info"
+    "title title title"
     "image info info"
     "descriotion descriotion descriotion";
 }
 
 
-.title{
-    grid-area: title;
-    padding-top: 10px;
+/*.title{*/
+/*    grid-area: title;*/
+/*    padding-top: 10px;*/
 
-    color: black;
-    font-size: 24px;
-    font-style: unset;
-    line-height: 22px;
+/*    color: black;*/
+/*    font-size: 25px;*/
+/*    font-style: unset;*/
+/*    line-height: 22px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+.title {
+    grid-area: title;
+    padding: 10px 0 10px 0;
+
+    font-size: 30px;
     font-weight: bold;
+    color: black;
+    font-style: oblique;
 }
 
-.itemImg{
+
+.itemImg {
     grid-area: image;
     max-width: 400px;
     max-height: 450px;
 }
 
-.info{
+.info {
     grid-area: info;
 }
 
 
-.description{
+.description {
     grid-area: descriotion;
     padding-top: 10px;
 
     color: black;
-    font-size: 20px;
+    font-size: 22px;
     font-style: unset;
     line-height: 22px;
 }
+
+
+.price {
+    padding-top: 10px;
+    /*font-weight: bold;*/
+    color: black;
+    font-size: 25px;
+    font-style: unset;
+    line-height: 22px;
+}
+
+.rating {
+    padding-top: 10px;
+    color: black;
+    font-size: 25px;
+    font-style: unset;
+    line-height: 22px;
+}
+

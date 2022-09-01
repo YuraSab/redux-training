@@ -19,13 +19,15 @@ const OneProductPage = () => {
 
     useEffect(() => {
         getOneProduct();
-    }, []);
+    }, [id]);
 
 
     // title
     // description
     // image
     // "rating":{"rate":3.9,"count":120}}
+    // price
+
 
 
     return (
@@ -37,7 +39,10 @@ const OneProductPage = () => {
                 <img className={styles.itemImg} src={item.image} alt={item.title}/>
             </div>
             <div className={styles.info}>
-                info
+                <div className={styles.price}>Price: <b>{item.price} $</b></div>
+                {/*"rating":{"rate"*/}
+                {/*<div className={styles.rating}>Rating: {rate} (voted: {item.rating.count})</div>*/}
+
             </div>
 
             <div className={styles.description}>
