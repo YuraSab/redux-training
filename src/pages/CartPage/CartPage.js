@@ -5,22 +5,46 @@ import styles from "./Cart.module.css";
 
 const CartPage = () => {
 
-    const {cart} = useSelector(({cart: {cart}}) => ({cart}));
+    let {cart} = useSelector(({cart: {cart}}) => ({cart}));
+
+    // const [cartsSum, setCartsSum] = useState('');
+
+    // const cartSum = cart.length > 0 ? (cart.reduce(function (accumulator, currentValue) {
+    //     const prev = accumulator.price;
+    //     const next = currentValue.price;
+    //     return prev + next
+    // })) : (
+    //     0
+    // );
 
 
+    let initialValue = 0;
+    let cartSum = cart.reduce(function (accumulator, currentValue) {
+        // const prev = accumulator.price;
+        // const next = currentValue.price;
+        // return prev + next
+        return accumulator + currentValue.price
+    }, initialValue);
 
-        const cartSum = cart.length > 0 ? (cart.reduce(function(accumulator, currentValue){
-            const prev = accumulator.price;
-            const next = currentValue.price;
-            return prev + next
-        }) ) : (
-            0
-        );
+
+// useEffect(() => {
+//     setCartsSum(cartSum);
+// }, [cart.length]);
+
+//
+// const cartReduce = () => {
+//     const cartSum = cart.length > 0 ? (cart.reduce(function(accumulator, currentValue){
+//         const prev = accumulator.price;
+//         const next = currentValue.price;
+//         return prev + next
+//     }) ) : (
+//         0
+//     );
+// }
 
 
     return (
         <div className={styles.mainDiv}>
-
 
 
             <div className={styles.tableEl}>
@@ -64,7 +88,18 @@ const CartPage = () => {
                 </div>
 
                 <div className={styles.totalPrice}>
-                    {cartSum} $
+                    {
+                        cart.length > 0 ? (
+                            <div>
+                                {cartSum} $
+                            </div>
+
+                        ) : (
+                            <div>
+                                0 $
+                            </div>
+                        )
+                    }
                 </div>
             </div>
 
