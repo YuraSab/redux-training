@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from "./Cart.module.css";
-// import {useDispatch, useSelector} from "react-redux";
-// import {onAddToCart} from "../../redux/action-creators/cart";
-// import CartIcon from "../../photos/cart.png";
+import {Link} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+import {onAddToCart} from "../../redux/action-creators/cart";
+import CartIcon from "../../photos/cart.png";
 
 const CartElement = ({item}) => {
 
@@ -13,10 +14,10 @@ const CartElement = ({item}) => {
     // "rating":{"rate":3.9,"count":120}}
 
 
-    // const {cart} = useSelector(({cart: {cart}}) => ({cart}));
-    //
-    // const dispatch = useDispatch();
-    // const addToCart = () => dispatch(onAddToCart(item));
+    const {cart} = useSelector(({cart: {cart}}) => ({cart}));
+
+    const dispatch = useDispatch();
+    const addToCart = () => dispatch(onAddToCart(item));
 
 
     return (
@@ -25,7 +26,9 @@ const CartElement = ({item}) => {
                 <img className={styles.itemImg} src={item.image} alt={item.title}/>
             </div>
             <div className={styles.cartTitle}>
-                {item.title}
+                <Link style={{textDecoration: 'none', color: 'black'}} to={`/products/${item.id}`}>
+                    {item.title}
+                </Link>
             </div>
             <div className={styles.cartPrice}>
                 {item.price} $
@@ -33,15 +36,15 @@ const CartElement = ({item}) => {
 
 
             <div className={styles.cartCart}>
-                {/*<div onClick={addToCart}>*/}
-                {/*    {*/}
-                {/*        cart.find(el => el.id === item.id) ? (*/}
-                {/*            <img className={styles.cartIconActive} src={CartIcon} alt={'Cart'}/>*/}
-                {/*        ) : (*/}
-                {/*            <img className={styles.cartIcon} src={CartIcon} alt={'Cart'}/>*/}
-                {/*        )*/}
-                {/*    }*/}
-                {/*</div>*/}
+                <div onClick={addToCart}>
+                    {
+                        cart.find(el => el.id === item.id) ? (
+                            <img className={styles.cartIconActive} src={CartIcon} alt={'Cart'}/>
+                        ) : (
+                            <img className={styles.cartIcon} src={CartIcon} alt={'Cart'}/>
+                        )
+                    }
+                </div>
             </div>
         </div>
     )

@@ -47,63 +47,86 @@ const CartPage = () => {
         <div className={styles.mainDiv}>
 
 
-            <div className={styles.tableEl}>
-                <div className={styles.tableImg}>
-                    Image
-                </div>
-
-                <div className={styles.tableTitle}>
-                    Title
-                </div>
-
-                <div className={styles.tablePrice}>
-                    Price
-                </div>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                fontSize: 50,
+                fontWeight: 'bold',
+                color: 'black',
+                fontStyle: 'oblique',
+                paddingBottom: 75
+            }}>
+                Your cart
             </div>
 
+            {
+                cart.length > 0 ? (
 
-            <div className={styles.tableCart}>
-                {
-                    cart.length > 0 ? (
+                    <div>
+                        <div className={styles.tableEl}>
+                            <div className={styles.tableImg}>
+                                Image
+                            </div>
 
-                        cart.map(el => {
-                            return (
-                                <CartElement
-                                    key={el.id}
-                                    item={el}
-                                />
-                            )
-                        })
-                    ) : (
-                        <div>
-                            No selected
+                            <div className={styles.tableTitle}>
+                                Title
+                            </div>
+
+                            <div className={styles.tablePrice}>
+                                Price
+                            </div>
                         </div>
-                    )
-                }
-            </div>
 
-            <div className={styles.totalDiv}>
-                <div className={styles.totalCaption}>
-                    Total price
-                </div>
 
-                <div className={styles.totalPrice}>
-                    {
-                        cart.length > 0 ? (
-                            <div>
-                                {cartSum} $
+                        <div className={styles.tableCart}>
+                            {
+                                cart.length > 0 ? (
+
+                                    cart.map(el => {
+                                        return (
+                                            <CartElement
+                                                key={el.id}
+                                                item={el}
+                                            />
+                                        )
+                                    })
+                                ) : (
+                                    <div>
+                                        No selected
+                                    </div>
+                                )
+                            }
+                        </div>
+
+                        <div className={styles.totalDiv}>
+                            <div className={styles.totalCaption}>
+                                Total price
                             </div>
 
-                        ) : (
-                            <div>
-                                0 $
+                            <div className={styles.totalPrice}>
+                                {
+                                    cart.length > 0 ? (
+                                        <div>
+                                            {Math.round(cartSum)} $
+                                        </div>
+
+                                    ) : (
+                                        <div>
+                                            0 $
+                                        </div>
+                                    )
+                                }
                             </div>
-                        )
-                    }
-                </div>
-            </div>
+                        </div>
 
-
+                    </div>
+                ) : (
+                    <div className={styles.nonSelected}>
+                        <h1>No items selected</h1>
+                    </div>
+                )
+            }
         </div>
     )
 }
