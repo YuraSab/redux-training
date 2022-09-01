@@ -52,3 +52,34 @@
     font-size: 28px;
     color: white;
 }
+
+
+.byIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cartIcon{
+    width: 60px;
+    padding: 2px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.likeIcon{
+    width: 50px;
+    padding: 2px;
+    margin-right: 25px;
+}
+
+
+.length{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-weight: bold;
+    font-size: 20px;
+
+}

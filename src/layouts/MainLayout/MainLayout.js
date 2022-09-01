@@ -7,6 +7,8 @@ import {OneProductPage} from "../../pages/OneProduct-page";
 import {InfoPage} from "../../pages/Info-page";
 import {MalePage} from "../../pages/GenderPages/Male-page";
 import {FemalePage} from "../../pages/GenderPages/Female-page";
+import {CartPage} from "../../pages/CartPage";
+import {WishListPage} from "../../pages/WishListPage";
 
 
 const MainLayout = () => {
@@ -26,6 +28,9 @@ const MainLayout = () => {
                     <Route path={'/products/female'} element={ <FemalePage/> }/>
                     <Route path={'/products/male/:id'} element={ <OneProductPage/> }/>
                     <Route path={'/products/female/:id'} element={ <OneProductPage/> }/>
+
+                    <Route path={'/products/cart'} element={ <CartPage/> }/>
+                    <Route path={'/products/wish_list'} element={ <WishListPage/> }/>
 
 
                     {/* info (info-page)*/}

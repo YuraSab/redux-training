@@ -74,3 +74,40 @@
     line-height: 22px;
 }
 
+
+
+.cartIcon{
+    width: 60px;
+    padding: 2px;
+    margin-right: 50px;
+}
+.cartIcon:hover{
+    padding: 0;
+    width: 60px;
+    background: #ECECEC;
+    border: black 2px solid;
+    margin-right: 50px;
+    border-radius: 8px;
+
+}
+
+.cartIconActive{
+    width: 60px;
+    padding: 2px;
+    margin-right: 50px;
+    background: green;
+    border-radius: 8px;
+}
+.cartIconActive:hover{
+    width: 60px;
+    padding: 2px;
+    margin-right: 50px;
+    background: red;
+    border-radius: 8px;
+}
+
+
+.divByIcons{
+    display: flex;
+    padding: 75px 0 0 0;
+}

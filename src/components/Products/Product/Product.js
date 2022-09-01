@@ -15,7 +15,10 @@ const Product = ({item}) => {
     const {pathname} = useLocation();
 
     return (
-        <Link  to={`${pathname}/${item.id}`} style={{textDecoration: 'none'}}>
+        <Link
+            to={`${pathname}/${item.id}`}
+            style={{textDecoration: 'none'}}
+        >
             <div className={styles.itemDiv}>
                 <div>
                     <img className={styles.itemImg} src={item.image} alt={item.title}/>

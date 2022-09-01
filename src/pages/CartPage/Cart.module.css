@@ -1,0 +1,165 @@
+.mainDiv{
+    padding: 50px 75px 50px 75px;
+
+}
+
+.mainEl{
+    display: grid;
+    flex-direction: row;
+    width: 100%;
+    border: 2px black solid;
+
+
+    grid-template-columns: 30% 40% 20% 10%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "image title price cart";
+}
+
+
+.cartCart{
+    grid-area: cart;
+    background: white;
+
+}
+
+
+.cartImg{
+    padding-left: 40px;
+   grid-area: image;
+    background: white;
+}
+
+.cartTitle{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
+   grid-area: title;
+    background: white;
+
+}
+
+
+.cartPrice{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    grid-area: price;
+    background: white;
+
+}
+
+
+.itemImg{
+    max-height: 350px;
+    max-width: 350px;
+}
+
+
+.tableEl{
+    display: grid;
+    flex-direction: row;
+    width: 100%;
+    border: 2px black solid;
+
+
+    grid-template-columns: 30% 40% 30% ;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "image title price";
+}
+
+.tableImg{
+    padding: 40px;
+    grid-area: image;
+    background: white;
+    font-size: 33px;
+    font-weight: bold;
+    color: black;
+}
+
+.tableTitle{
+    padding: 40px 0;
+    grid-area: title;
+    background: white;
+    font-size: 33px;
+    font-weight: bold;
+    color: black;
+}
+
+.tablePrice{
+    padding: 40px 0;
+    grid-area: price;
+    background: white;
+    font-size: 33px;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+.totalDiv{
+    display: grid;
+    flex-direction: row;
+    width: 100%;
+    border: 2px black solid;
+
+    grid-template-columns: 70% 30% ;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "caption price";
+}
+
+.totalCaption{
+    padding:  40px;
+    grid-area: caption;
+    background: white;
+    font-size: 33px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.totalPrice{
+    padding: 40px 0;
+    grid-area: price;
+    background: white;
+    font-size: 33px;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+.cartIcon{
+    width: 60px;
+    padding: 2px;
+    margin-right: 50px;
+}
+.cartIcon:hover{
+    padding: 0;
+    width: 60px;
+    background: #ECECEC;
+    border: black 2px solid;
+    margin-right: 50px;
+    border-radius: 8px;
+
+}
+
+.cartIconActive{
+    width: 60px;
+    padding: 2px;
+    margin-right: 50px;
+    background: green;
+    border-radius: 8px;
+}
+.cartIconActive:hover{
+    width: 60px;
+    padding: 2px;
+    margin-right: 50px;
+    background: red;
+    border-radius: 8px;
+}
