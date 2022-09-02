@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/YuraSab/redux_shop.github.io.git/redux-training/static/css/main.92aa92b2.css",
-    "main.js": "/YuraSab/redux_shop.github.io.git/redux-training/static/js/main.c429f5cc.js",
-    "static/js/787.df80e3c2.chunk.js": "/YuraSab/redux_shop.github.io.git/redux-training/static/js/787.df80e3c2.chunk.js",
-    "static/media/img.png": "/YuraSab/redux_shop.github.io.git/redux-training/static/media/img.672420c110ae588564f2.png",
-    "static/media/insta.png": "/YuraSab/redux_shop.github.io.git/redux-training/static/media/insta.80e598d8df0c0a94d580.png",
-    "static/media/jpg": "/YuraSab/redux_shop.github.io.git/redux-training/static/media/d123e0a31c55f2f70ebd92ed1c110ee3.83e1a153d3629121a792.jpg",
-    "static/media/istockphoto-1160533209-170667a.jpg": "/YuraSab/redux_shop.github.io.git/redux-training/static/media/istockphoto-1160533209-170667a.2737d2616183cc7d8ca8.jpg",
-    "static/media/start-a-clothing-line-retail.webp": "/YuraSab/redux_shop.github.io.git/redux-training/static/media/start-a-clothing-line-retail.8b86f4ffb7481ea8a72e.webp",
-    "static/media/telegram.png": "/YuraSab/redux_shop.github.io.git/redux-training/static/media/telegram.28f6fc50e59d1a9a75cb.png",
-    "static/media/facebook.png": "/YuraSab/redux_shop.github.io.git/redux-training/static/media/facebook.c77b76eb550c5f18b503.png",
-    "static/media/watsap.png": "/YuraSab/redux_shop.github.io.git/redux-training/static/media/watsap.a878795dc6580e28ce3a.png",
-    "static/media/headerCart.png": "/YuraSab/redux_shop.github.io.git/redux-training/static/media/headerCart.f13a145246783db93c48.png",
-    "static/media/cart.png": "/YuraSab/redux_shop.github.io.git/redux-training/static/media/cart.9294e7d917d57a510c8c.png",
-    "index.html": "/YuraSab/redux_shop.github.io.git/redux-training/index.html",
-    "main.92aa92b2.css.map": "/YuraSab/redux_shop.github.io.git/redux-training/static/css/main.92aa92b2.css.map",
-    "main.c429f5cc.js.map": "/YuraSab/redux_shop.github.io.git/redux-training/static/js/main.c429f5cc.js.map",
-    "787.df80e3c2.chunk.js.map": "/YuraSab/redux_shop.github.io.git/redux-training/static/js/787.df80e3c2.chunk.js.map"
+    "main.css": "/redux-training/static/css/main.92aa92b2.css",
+    "main.js": "/redux-training/static/js/main.54c7723a.js",
+    "static/js/787.df80e3c2.chunk.js": "/redux-training/static/js/787.df80e3c2.chunk.js",
+    "static/media/img.png": "/redux-training/static/media/img.672420c110ae588564f2.png",
+    "static/media/insta.png": "/redux-training/static/media/insta.80e598d8df0c0a94d580.png",
+    "static/media/jpg": "/redux-training/static/media/d123e0a31c55f2f70ebd92ed1c110ee3.83e1a153d3629121a792.jpg",
+    "static/media/istockphoto-1160533209-170667a.jpg": "/redux-training/static/media/istockphoto-1160533209-170667a.2737d2616183cc7d8ca8.jpg",
+    "static/media/start-a-clothing-line-retail.webp": "/redux-training/static/media/start-a-clothing-line-retail.8b86f4ffb7481ea8a72e.webp",
+    "static/media/telegram.png": "/redux-training/static/media/telegram.28f6fc50e59d1a9a75cb.png",
+    "static/media/facebook.png": "/redux-training/static/media/facebook.c77b76eb550c5f18b503.png",
+    "static/media/watsap.png": "/redux-training/static/media/watsap.a878795dc6580e28ce3a.png",
+    "static/media/headerCart.png": "/redux-training/static/media/headerCart.f13a145246783db93c48.png",
+    "static/media/cart.png": "/redux-training/static/media/cart.9294e7d917d57a510c8c.png",
+    "index.html": "/redux-training/index.html",
+    "main.92aa92b2.css.map": "/redux-training/static/css/main.92aa92b2.css.map",
+    "main.54c7723a.js.map": "/redux-training/static/js/main.54c7723a.js.map",
+    "787.df80e3c2.chunk.js.map": "/redux-training/static/js/787.df80e3c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92aa92b2.css",
-    "static/js/main.c429f5cc.js"
+    "static/js/main.54c7723a.js"
   ]
 }
