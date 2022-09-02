@@ -1,24 +1,39 @@
 import React, {useEffect, useState} from 'react';
-import {ProductService} from "../../../services/Product-service";
+// import {ProductService} from "../../../services/Product-service";
 import {Product} from "../Product";
 import styles from "./Products.module.css";
 import {useSearchParams} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+import {getProductsByGender} from "../../../redux/action-creators/products";
 
 const Products = ({genre}) => {
 
+    // const productService = new ProductService();
+    // const [products, setProducts] = useState([]);
 
-    const productService = new ProductService();
 
-    const [products, setProducts] = useState([]);
+    const {products} = useSelector( ({ products: {products} }) => ({ products }) );
+    const dispatch = useDispatch();
 
-    const getProducts = async () =>{
-        const response = await productService.getProducts();
-        const filtered = await response.filter(el => el.category === genre);
-        setProducts(filtered);
+
+
+    // const getProducts = async () =>{
+    //     const response = await productService.getProducts();
+    //     const filtered = await response.filter(el => el.category === genre);
+    //     setProducts(filtered);
+    // }
+
+    const getProducts2 = async (gender) =>{
+        // const response = await productService.getProducts();
+        // const filtered = await response.filter(el => el.category === genre);
+        // setProducts(filtered);
+        dispatch(getProductsByGender(gender))
     }
 
+
     useEffect(() => {
-        getProducts();
+        // getProducts();
+        getProducts2(genre);
     }, [])
 
 
@@ -52,6 +67,9 @@ const Products = ({genre}) => {
     }
 
     const [searchParams, setSearchParams] = useSearchParams();
+
+
+
 
 
 
