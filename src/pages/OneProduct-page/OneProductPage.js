@@ -3,12 +3,12 @@ import styles from "./OneProductPage.module.css";
 import {useParams} from "react-router-dom";
 // import {ProductService} from "../../services/Product-service";
 import {useDispatch, useSelector} from "react-redux";
-import {onAddToCart} from "../../redux/action-creators/cart";
-import {onAddToWishList} from "../../redux/action-creators/wishList";
+import {onAddToCart} from "../../redux/action-creators";
+import {onAddToWishList} from "../../redux/action-creators";
 import CartIcon from "../../photos/cart.png";
 import LikeActive from "../../photos/activeLike.png";
 import LikeNotActive from "../../photos/noActiveLike.png";
-import {getProductById} from "../../redux/action-creators/products";
+import {getProductById} from "../../redux/action-creators";
 
 
 const OneProductPage = () => {

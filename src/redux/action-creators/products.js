@@ -3,7 +3,7 @@ import {ProductService} from "../../services/Product-service";
 
 
 
-
+// by async functions
 export const getProducts = () => async (dispatch) => {
     // type: GET_PRODUCTS,
     // payload: productService.getProducts()
